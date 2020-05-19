@@ -457,7 +457,7 @@ func playSound(play *Play, vc *discordgo.VoiceConnection) (err error) {
 
 func onReady(s *discordgo.Session, event *discordgo.Ready) {
 	log.Info("Recieved READY payload")
-	s.UpdateStatus(0, "airhornbot.com")
+	s.UpdateStatus(0, "Playing loud noises")
 }
 
 func scontains(key string, options ...string) bool {
@@ -700,7 +700,7 @@ func main() {
 	}
 
 	// We're running!
-	log.Info("AIRHORNBOT is ready to horn it up.")
+	log.Info("AIRHORNBOT v2 is ready to horn it up.")
 
 	// Wait for a signal to quit
 	c := make(chan os.Signal, 1)
